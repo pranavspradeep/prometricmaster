@@ -1,0 +1,13 @@
+lms.learnmaths.co.in
+
+DataServer: SG2NWPLS19SQL-v04.mssql.shr.prod.sin2.secureserver.net
+
+Data Base :Initial Catalog=LearnMaths
+
+User ID=datalearn
+
+Password=815&amp;9pnWb
+
+ftplmslearn
+
+011$9Eekn
