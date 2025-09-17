@@ -74,23 +74,13 @@ class SignUpPage extends StatelessWidget {
                             ClipRRect(
                               borderRadius: BorderRadius.circular(50),
                               child: Image.asset(
-                                'assets/images/logo.png',
-                                width: 50,
-                                height: 50,
-                                fit: BoxFit.cover,
+                                'assets/images/logo.jpg',
+                                width: 150,
+                                height:80,
+                                fit: BoxFit.fill,
                               ),
                             ),
-                            const SizedBox(width: 10),
-                            const Text(
-                              'LEARN MATHS',
-                              style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.w700,
-                                color: Color(0xFF2A2D93),
-                                letterSpacing: 1.5,
-                                fontFamily: 'Montserrat',
-                              ),
-                            ),
+                            
                           ],
                         ),
                         const SizedBox(height: 18),

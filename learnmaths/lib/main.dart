@@ -51,21 +51,11 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Image.asset(
-                    'assets/images/logo.png',
-                    width: 80,
-                    height: 80,
+                    'assets/images/logo.jpg',
+                    width: 150,
+                    height: 150,
                   ),
-                  const SizedBox(width: 10), // Reduced space between logo and text
-                  const Text(
-                    'LEARN MATHS',
-                    style: TextStyle(
-                      fontSize: 28,
-                      fontWeight: FontWeight.bold,
-                      color: Color(0xFF2A2D93),
-                      letterSpacing: 1.2,
-                      fontFamily: 'Montserrat',
-                    ),
-                  ),
+                  
                 ],
               ),
             ],

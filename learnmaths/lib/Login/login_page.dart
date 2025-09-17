@@ -133,7 +133,7 @@ class _LoginScreenState extends State<LoginScreen> {
             Container(
               height: MediaQuery.of(context).size.height * 0.5,
               decoration: const BoxDecoration(
-                color: Color(0xFF2A2D93),
+                color: Color.fromARGB(255, 255, 255, 255),
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(40),
                   bottomRight: Radius.circular(40),
@@ -152,26 +152,13 @@ class _LoginScreenState extends State<LoginScreen> {
                     mainAxisSize: MainAxisSize.min,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(50),
-                        child: Image.asset(
-                          'assets/images/logo.png',
-                          width: 70,
-                          height: 70,
-                          fit: BoxFit.cover,
-                        ),
+                      Image.asset(
+                        'assets/images/logo.jpg',
+                        width: 150,
+                        height: 120,
+                        fit: BoxFit.fill,
                       ),
-                      const SizedBox(width: 18),
-                      const Text(
-                        'LEARN MATHS',
-                        style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.white,
-                          letterSpacing: 1.5,
-                          fontFamily: 'Montserrat',
-                        ),
-                      ),
+                      
                     ],
                   ),
                   const SizedBox(height: 8),
@@ -179,7 +166,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     'Learning Management System',
                     style: TextStyle(
                       fontSize: 14,
-                      color: Colors.white,
+                      color: Color.fromARGB(255, 37, 100, 177),
                       fontWeight: FontWeight.w400,
                       letterSpacing: 1.1,
                       fontFamily: 'Montserrat',
@@ -225,6 +212,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             const Text(
                               'Login',
                               style: TextStyle(
+                                color: Color.fromARGB(255, 38, 170, 149),
                                 fontSize: 24,
                                 fontWeight: FontWeight.bold,
                               ),
@@ -308,7 +296,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               child: ElevatedButton(
                                 onPressed: _isLoading ? null : _login,
                                 style: ElevatedButton.styleFrom(
-                                  backgroundColor:Color(0xFF2A2D93),
+                                  backgroundColor:Color(0xFF2564B1),
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(30),
                                   ),
@@ -370,7 +358,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                       child: const Text(
                                         'Sign Up',
                                         style: TextStyle(
-                                          color: Color(0xFF2A2D93),
+                                          color: Color(0xFF2564B1),
                                           fontWeight: FontWeight.bold,
                                         ),
                                       ),
