@@ -1,3 +1,3 @@
 class Config {
-  static const String apiBaseUrl = 'http://app.prometricmaster.com/';
+  static const String apiBaseUrl = 'https://app.prometricmaster.com/';
 }

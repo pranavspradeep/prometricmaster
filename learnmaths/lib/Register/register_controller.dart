@@ -51,10 +51,10 @@ class RegisterController extends ChangeNotifier {
         Uri.parse('${Config.apiBaseUrl}/api/user/register'),
         headers: {'Content-Type': 'application/json'},
         body: jsonEncode({
-          'Mobile': mobileController.text,
-          'Username': usernameController.text,
+          'Phone': mobileController.text,
+          'Name': usernameController.text,
           'Password': passwordController.text,
-          'DeviceId': _deviceId ?? '',
+          'deviceid': _deviceId ?? '',
         }),
       );
       _isLoading = false;

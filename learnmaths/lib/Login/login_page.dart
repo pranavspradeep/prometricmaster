@@ -70,7 +70,7 @@ class _LoginScreenState extends State<LoginScreen> {
             context,
             MaterialPageRoute(
               builder: (context) => WebView(
-                initialUrl: 'http://learnmaths.co.in/welcome?mobile=$mobile',
+                initialUrl: 'https://prometricmaster.com/welcome?mobile=$mobile',
               ),
             ),
           );
