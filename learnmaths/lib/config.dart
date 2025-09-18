@@ -1,3 +1,3 @@
 class Config {
-  static const String apiBaseUrl = 'https://lms.learnmaths.co.in';
+  static const String apiBaseUrl = 'http://app.prometricmaster.com/';
 }

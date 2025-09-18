@@ -15,17 +15,17 @@ namespace Learnmathservice.Controllers
         // POST: api/user/register
         [HttpPost]
         [Route("register")]
-        public IHttpActionResult Register(TblAddCrash model)
+        public IHttpActionResult Register(tbl_Student model)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
             // Check if mobile already exists
-            var exists = db.TblAddCrash.Any(u => u.Mobile == model.Mobile);
+            var exists = db.tbl_Students.Any(u => u.Phone == model.Phone);
             if (exists)
                 return Content(HttpStatusCode.Conflict, "Mobile number already registered.");
 
-            db.TblAddCrash.Add(model);
+            db.tbl_Students.Add(model);
             db.SaveChanges();
 
             return Ok("Registration successful.");
@@ -39,16 +39,16 @@ namespace Learnmathservice.Controllers
             if (login == null || string.IsNullOrWhiteSpace(login.Mobile) || string.IsNullOrWhiteSpace(login.Password) || string.IsNullOrWhiteSpace(login.DeviceId))
                 return BadRequest("Mobile, Password, and DeviceId are required.");
 
-            var user = db.TblAddCrash.FirstOrDefault(u => u.Mobile == login.Mobile && u.Password == login.Password);
+            var user = db.tbl_Students.FirstOrDefault(u => u.Phone == login.Mobile && u.Password == login.Password);
             if (user == null)
                 return Unauthorized();
-            if(user.Mobile=="8137008909")
-                return Ok(new { Mobile = user.Mobile });
+            //if(user.Phone == "8137008909")
+            //    return Ok(new { Mobile = user.Phone });
 
-            if (user.DeviceId != login.DeviceId)
+            if (user.deviceid != login.DeviceId)
                 return Content(HttpStatusCode.Forbidden, "Device ID mismatch.");
 
-            return Ok(new { Mobile = user.Mobile });
+            return Ok(new { Mobile = user.Phone });
         }
 
         protected override void Dispose(bool disposing)

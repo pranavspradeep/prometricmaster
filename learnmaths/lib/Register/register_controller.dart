@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
+import 'package:learnmaths/config.dart';
 import 'package:learnmaths/device_service.dart';
 
 class MobileAlreadyRegisteredException implements Exception {
@@ -47,7 +48,7 @@ class RegisterController extends ChangeNotifier {
     try {
       await getDeviceId();
       final response = await http.post(
-        Uri.parse('https://lms.learnmaths.co.in/api/user/register'),
+        Uri.parse('${Config.apiBaseUrl}/api/user/register'),
         headers: {'Content-Type': 'application/json'},
         body: jsonEncode({
           'Mobile': mobileController.text,

@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Projects\\prometricmaster\\learnmathapi-src\\Learnmathservice\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E8D527F4-A444-42CE-94C1-6BC35C4A6DB4}|Learnmathservice\\Learnmathservice.csproj|C:\\Projects\\prometricmaster\\learnmathapi-src\\Learnmathservice\\learnmathservice\\models\\tbladdcrash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8D527F4-A444-42CE-94C1-6BC35C4A6DB4}|Learnmathservice\\Learnmathservice.csproj|solutionrelative:learnmathservice\\models\\tbladdcrash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E8D527F4-A444-42CE-94C1-6BC35C4A6DB4}|Learnmathservice\\Learnmathservice.csproj|C:\\Projects\\prometricmaster\\learnmathapi-src\\Learnmathservice\\learnmathservice\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8D527F4-A444-42CE-94C1-6BC35C4A6DB4}|Learnmathservice\\Learnmathservice.csproj|solutionrelative:learnmathservice\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8D527F4-A444-42CE-94C1-6BC35C4A6DB4}|Learnmathservice\\Learnmathservice.csproj|c:\\projects\\prometricmaster\\learnmathapi-src\\learnmathservice\\learnmathservice\\models\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E8D527F4-A444-42CE-94C1-6BC35C4A6DB4}|Learnmathservice\\Learnmathservice.csproj|c:\\projects\\prometricmaster\\learnmathapi-src\\learnmathservice\\learnmathservice\\models\\tbl_students.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8D527F4-A444-42CE-94C1-6BC35C4A6DB4}|Learnmathservice\\Learnmathservice.csproj|solutionrelative:learnmathservice\\models\\tbl_students.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8D527F4-A444-42CE-94C1-6BC35C4A6DB4}|Learnmathservice\\Learnmathservice.csproj|C:\\Projects\\prometricmaster\\learnmathapi-src\\Learnmathservice\\learnmathservice\\models\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8D527F4-A444-42CE-94C1-6BC35C4A6DB4}|Learnmathservice\\Learnmathservice.csproj|solutionrelative:learnmathservice\\models\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8D527F4-A444-42CE-94C1-6BC35C4A6DB4}|Learnmathservice\\Learnmathservice.csproj|c:\\projects\\prometricmaster\\learnmathapi-src\\learnmathservice\\learnmathservice\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8D527F4-A444-42CE-94C1-6BC35C4A6DB4}|Learnmathservice\\Learnmathservice.csproj|solutionrelative:learnmathservice\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E8D527F4-A444-42CE-94C1-6BC35C4A6DB4}|Learnmathservice\\Learnmathservice.csproj|c:\\projects\\prometricmaster\\learnmathapi-src\\learnmathservice\\learnmathservice\\models\\tbladdcrash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8D527F4-A444-42CE-94C1-6BC35C4A6DB4}|Learnmathservice\\Learnmathservice.csproj|solutionrelative:learnmathservice\\models\\tbladdcrash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8D527F4-A444-42CE-94C1-6BC35C4A6DB4}|Learnmathservice\\Learnmathservice.csproj|c:\\projects\\prometricmaster\\learnmathapi-src\\learnmathservice\\learnmathservice\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8D527F4-A444-42CE-94C1-6BC35C4A6DB4}|Learnmathservice\\Learnmathservice.csproj|solutionrelative:learnmathservice\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8D527F4-A444-42CE-94C1-6BC35C4A6DB4}|Learnmathservice\\Learnmathservice.csproj|c:\\projects\\prometricmaster\\learnmathapi-src\\learnmathservice\\learnmathservice\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E8D527F4-A444-42CE-94C1-6BC35C4A6DB4}|Learnmathservice\\Learnmathservice.csproj|solutionrelative:learnmathservice\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,21 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DbContext.cs",
-              "DocumentMoniker": "C:\\Projects\\prometricmaster\\learnmathapi-src\\Learnmathservice\\Learnmathservice\\Models\\DbContext.cs",
-              "RelativeDocumentMoniker": "Learnmathservice\\Models\\DbContext.cs",
-              "ToolTip": "C:\\Projects\\prometricmaster\\learnmathapi-src\\Learnmathservice\\Learnmathservice\\Models\\DbContext.cs",
-              "RelativeToolTip": "Learnmathservice\\Models\\DbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T16:34:34.945Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -47,26 +46,78 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Projects\\prometricmaster\\learnmathapi-src\\Learnmathservice\\Learnmathservice\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Learnmathservice\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Projects\\prometricmaster\\learnmathapi-src\\Learnmathservice\\Learnmathservice\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Learnmathservice\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T01:52:26.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "tbl_Students.cs",
+              "DocumentMoniker": "C:\\Projects\\prometricmaster\\learnmathapi-src\\Learnmathservice\\Learnmathservice\\Models\\tbl_Students.cs",
+              "RelativeDocumentMoniker": "Learnmathservice\\Models\\tbl_Students.cs",
+              "ToolTip": "C:\\Projects\\prometricmaster\\learnmathapi-src\\Learnmathservice\\Learnmathservice\\Models\\tbl_Students.cs",
+              "RelativeToolTip": "Learnmathservice\\Models\\tbl_Students.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAqwEcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T01:50:22.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "DbContext.cs",
+              "DocumentMoniker": "C:\\Projects\\prometricmaster\\learnmathapi-src\\Learnmathservice\\Learnmathservice\\Models\\DbContext.cs",
+              "RelativeDocumentMoniker": "Learnmathservice\\Models\\DbContext.cs",
+              "ToolTip": "C:\\Projects\\prometricmaster\\learnmathapi-src\\Learnmathservice\\Learnmathservice\\Models\\DbContext.cs",
+              "RelativeToolTip": "Learnmathservice\\Models\\DbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T16:34:34.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Projects\\prometricmaster\\learnmathapi-src\\Learnmathservice\\Learnmathservice\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Learnmathservice\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Projects\\prometricmaster\\learnmathapi-src\\Learnmathservice\\Learnmathservice\\Controllers\\UserController.cs",
               "RelativeToolTip": "Learnmathservice\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAQwC0AAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-14T09:41:10.629Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Projects\\prometricmaster\\learnmathapi-src\\Learnmathservice\\Learnmathservice\\Web.config",
+              "RelativeDocumentMoniker": "Learnmathservice\\Web.config",
+              "ToolTip": "C:\\Projects\\prometricmaster\\learnmathapi-src\\Learnmathservice\\Learnmathservice\\Web.config",
+              "RelativeToolTip": "Learnmathservice\\Web.config",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEgAAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-09-18T01:36:46.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "TblAddCrash.cs",
               "DocumentMoniker": "C:\\Projects\\prometricmaster\\learnmathapi-src\\Learnmathservice\\Learnmathservice\\Models\\TblAddCrash.cs",
               "RelativeDocumentMoniker": "Learnmathservice\\Models\\TblAddCrash.cs",
               "ToolTip": "C:\\Projects\\prometricmaster\\learnmathapi-src\\Learnmathservice\\Learnmathservice\\Models\\TblAddCrash.cs",
               "RelativeToolTip": "Learnmathservice\\Models\\TblAddCrash.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAUwBsAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBQAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-12T11:56:16.252Z",
               "EditorCaption": ""

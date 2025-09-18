@@ -2,7 +2,7 @@
     package="com.learnmaths.app">
     <uses-permission android:name="android.permission.INTERNET"/>
     <application
-        android:label="Learn maths"
+        android:label="Prometric Master"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
         android:usesCleartextTraffic="true">

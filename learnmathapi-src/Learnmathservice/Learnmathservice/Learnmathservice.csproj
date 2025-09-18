@@ -169,6 +169,7 @@
     </Compile>
     <Compile Include="Models\DbContext.cs" />
     <Compile Include="Models\TblAddCrash.cs" />
+    <Compile Include="Models\tbl_Students.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Request\LoginRequest.cs" />
   </ItemGroup>

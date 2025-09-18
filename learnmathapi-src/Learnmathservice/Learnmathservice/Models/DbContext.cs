@@ -16,7 +16,8 @@ namespace Learnmathservice.Models
             }
 
 
-            public DbSet<TblAddCrash> TblAddCrash { get; set; } 
+            //public DbSet<TblAddCrash> TblAddCrash { get; set; } 
+            public DbSet<tbl_Student> tbl_Students { get; set; }
         }
     }
 }
