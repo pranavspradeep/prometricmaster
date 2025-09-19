@@ -20,7 +20,7 @@ namespace Learnmathservice.Models
         public string Address { get; set; }
         public string Photo { get; set; }
         public DateTime? Admission { get; set; }
-        public int? Status { get; set; }
+        public int Status { get; set; }
         public int? Branch_id { get; set; }
         public string Branchadmin { get; set; }
         public string Parent { get; set; }
@@ -67,7 +67,7 @@ namespace Learnmathservice.Models
         public string source { get; set; }
         public string Mode { get; set; }
         public int? Bid { get; set; }
-        public int? flag { get; set; }
+        public bool flag { get; set; }
 
         public string deviceid { get; set; }
     }

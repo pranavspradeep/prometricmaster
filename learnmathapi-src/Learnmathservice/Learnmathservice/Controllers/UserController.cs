@@ -21,9 +21,11 @@ namespace Learnmathservice.Controllers
                 return BadRequest(ModelState);
 
             // Check if mobile already exists
-            var exists = db.tbl_Students.Any(u => u.Phone == model.Phone);
+            var exists = db.tbl_Students.Any(u => u.Email == model.Email);
             if (exists)
-                return Content(HttpStatusCode.Conflict, "Mobile number already registered.");
+                return Content(HttpStatusCode.Conflict, "Email already registered.");
+            model.flag = true;
+            model.Status = 1;
 
             db.tbl_Students.Add(model);
             db.SaveChanges();
@@ -36,10 +38,10 @@ namespace Learnmathservice.Controllers
         [Route("login")]
         public IHttpActionResult Login([FromBody] LoginRequest login)
         {
-            if (login == null || string.IsNullOrWhiteSpace(login.Mobile) || string.IsNullOrWhiteSpace(login.Password) || string.IsNullOrWhiteSpace(login.DeviceId))
-                return BadRequest("Mobile, Password, and DeviceId are required.");
+            if (login == null || string.IsNullOrWhiteSpace(login.Email) || string.IsNullOrWhiteSpace(login.Password) || string.IsNullOrWhiteSpace(login.DeviceId))
+                return BadRequest("Email, Password, and DeviceId are required.");
 
-            var user = db.tbl_Students.FirstOrDefault(u => u.Phone == login.Mobile && u.Password == login.Password);
+            var user = db.tbl_Students.FirstOrDefault(u => u.Email == login.Email && u.Password == login.Password);
             if (user == null)
                 return Unauthorized();
             //if(user.Phone == "8137008909")

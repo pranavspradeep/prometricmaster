@@ -15,14 +15,14 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   bool _obscureText = true;
-  final TextEditingController _mobileController = TextEditingController();
+  final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   bool _isLoading = false;
   String? _deviceId;
 
   @override
   void dispose() {
-    _mobileController.dispose();
+    _emailController.dispose();
     _passwordController.dispose();
     super.dispose();
   }
@@ -47,7 +47,7 @@ class _LoginScreenState extends State<LoginScreen> {
     try {
       final deviceId = await DeviceService.getDeviceId();
       final response = await AuthService().login(
-        mobile: _mobileController.text.trim(),
+        email: _emailController.text.trim(),
         password: _passwordController.text,
         deviceId: deviceId ?? '',
       );
@@ -221,15 +221,15 @@ class _LoginScreenState extends State<LoginScreen> {
                             const Align(
                               alignment: Alignment.centerLeft,
                               child: Text(
-                                'Mobile Number',
+                                'Email',
                                 style: TextStyle(fontSize: 12),
                               ),
                             ),
                             const SizedBox(height: 4),
                             TextFormField(
-                              controller: _mobileController,
-                              keyboardType: TextInputType.phone,
-                              autofillHints: const [AutofillHints.telephoneNumber],
+                              controller: _emailController,
+                              keyboardType: TextInputType.emailAddress,
+                              autofillHints: const [AutofillHints.email],
                               decoration: InputDecoration(
                                 contentPadding: const EdgeInsets.symmetric(horizontal: 16),
                                 filled: true,

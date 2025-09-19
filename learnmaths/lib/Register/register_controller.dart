@@ -15,6 +15,15 @@ class RegisterController extends ChangeNotifier {
   final usernameController = TextEditingController();
   final mobileController = TextEditingController();
   final passwordController = TextEditingController();
+  final emailController = TextEditingController();
+  
+  RegisterController() {
+    // Rebuild listeners when any field changes so UI can enable/disable the button reactively
+    usernameController.addListener(_onFieldsChanged);
+    mobileController.addListener(_onFieldsChanged);
+    passwordController.addListener(_onFieldsChanged);
+    emailController.addListener(_onFieldsChanged);
+  }
 
   bool _obscurePassword = true;
   bool get obscurePassword => _obscurePassword;
@@ -27,6 +36,11 @@ class RegisterController extends ChangeNotifier {
 
   void togglePasswordVisibility() {
     _obscurePassword = !_obscurePassword;
+    notifyListeners();
+  }
+
+  void _onFieldsChanged() {
+    // Notify listeners so widgets depending on controller values rebuild
     notifyListeners();
   }
 
@@ -53,6 +67,7 @@ class RegisterController extends ChangeNotifier {
         body: jsonEncode({
           'Phone': mobileController.text,
           'Name': usernameController.text,
+          'Email': emailController.text,
           'Password': passwordController.text,
           'deviceid': _deviceId ?? '',
         }),
@@ -73,10 +88,17 @@ class RegisterController extends ChangeNotifier {
     }
   }
 
-  void disposeControllers() {
+  @override
+  void dispose() {
+    usernameController.removeListener(_onFieldsChanged);
+    mobileController.removeListener(_onFieldsChanged);
+    passwordController.removeListener(_onFieldsChanged);
+    emailController.removeListener(_onFieldsChanged);
+
     usernameController.dispose();
     mobileController.dispose();
     passwordController.dispose();
+    emailController.dispose();
     super.dispose();
   }
 }

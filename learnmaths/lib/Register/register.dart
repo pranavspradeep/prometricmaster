@@ -30,7 +30,6 @@ class SignUpPage extends StatelessWidget {
     return FutureBuilder<String?>(
       future: DeviceService.getDeviceId(),
       builder: (context, snapshot) {
-        final deviceId = snapshot.data;
         return Scaffold(
           backgroundColor: Colors.white,
           body: Stack(
@@ -143,37 +142,77 @@ class SignUpPage extends StatelessWidget {
                           icon: Icons.person_outline,
                           hint: 'your name',
                           controller: controller.usernameController,
+                          keyboardType: TextInputType.name,
+                          validator: (value) {
+                            if (value == null || value.trim().isEmpty) {
+                              return 'Please enter your name';
+                            }
+                            return null;
+                          },
                         ),
                         const SizedBox(height: 16),
                         InputField(
+                          
                           label: 'Mobile Number',
                           icon: Icons.phone_outlined,
                           hint: 'your number',
                           controller: controller.mobileController,
+                          keyboardType: TextInputType.phone,
+                          validator: (value) {
+                            if (value == null || value.trim().isEmpty) {
+                              return 'Please enter your mobile number';
+                            }
+                            if (!_isValidIndianMobile(value.trim())) {
+                              return 'Enter a valid 10-digit Indian mobile number';
+                            }
+                            return null;
+                          },
                         ),
                         const SizedBox(height: 16),
+                        InputField(
+                          label: 'Email',
+                          icon: Icons.email,
+                          hint: 'your email',
+                          controller: controller.emailController,
+                          keyboardType: TextInputType.emailAddress,
+                          validator: (value) {
+                            if (value == null || value.isEmpty) {
+                              return 'Please enter your email';
+                            }
+                            if (!_isValidEmail(value)) {
+                              return 'Please enter a valid email address';
+                            }
+                            return null;
+                          },
+                        ),
+                         const SizedBox(height: 16),
                         InputField(
                           label: 'Password',
                           icon: Icons.lock_outline,
                           hint: '********',
                           obscure: controller.obscurePassword,
                           controller: controller.passwordController,
+                          keyboardType: TextInputType.visiblePassword,
                           suffixIcon: IconButton(
                             icon: Icon(controller.obscurePassword ? Icons.visibility : Icons.visibility_off),
                             onPressed: controller.togglePasswordVisibility,
                           ),
                         ),
+                        
+                        
                         const SizedBox(height: 24),
                         SizedBox(
                           width: double.infinity,
                           child: ElevatedButton(
                             onPressed: controller.isLoading ||
-                                controller.usernameController.text.trim().isEmpty ||
-                                controller.mobileController.text.trim().isEmpty ||
-                                controller.passwordController.text.isEmpty ||
-                                !_isValidIndianMobile(controller.mobileController.text.trim())
-                              ? null
-                              : () async {
+                                    controller.usernameController.text.trim().isEmpty ||
+                                    controller.mobileController.text.trim().isEmpty ||
+                                    controller.emailController.text.trim().isEmpty ||
+                                    controller.passwordController.text.isEmpty ||
+                                    !_isValidIndianMobile(controller.mobileController.text.trim()) ||
+                                    !_isValidEmail(controller.emailController.text.trim())
+                                ? null
+                                : () async {
                                   // Prevent multiple clicks by using a local flag
                                   if (controller.isLoading) return;
                                   try {
@@ -252,6 +291,8 @@ class InputField extends StatelessWidget {
   final bool obscure;
   final Widget? suffixIcon;
   final TextEditingController? controller;
+  final String? Function(String?)? validator;
+  final TextInputType? keyboardType;
 
   const InputField({
     super.key,
@@ -261,6 +302,8 @@ class InputField extends StatelessWidget {
     this.obscure = false,
     this.suffixIcon,
     this.controller,
+    this.validator,
+    this.keyboardType,
   });
 
   @override
@@ -273,9 +316,12 @@ class InputField extends StatelessWidget {
           style: const TextStyle(fontSize: 14, color: Colors.grey),
         ),
         const SizedBox(height: 4),
-        TextField(
+        TextFormField(
           controller: controller,
           obscureText: obscure,
+          validator: validator,
+          keyboardType: keyboardType,
+          autovalidateMode: AutovalidateMode.onUserInteraction,
           decoration: InputDecoration(
             hintText: hint,
             prefixIcon: Icon(icon, color: Colors.grey),
@@ -301,4 +347,10 @@ class InputField extends StatelessWidget {
 bool _isValidIndianMobile(String mobile) {
   final regex = RegExp(r'^[6-9]\d{9}$');
   return regex.hasMatch(mobile);
+}
+
+bool _isValidEmail(String email) {
+  // RFC 5322-friendly but pragmatic regex
+  final emailRegex = RegExp(r'^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$', caseSensitive: false);
+  return emailRegex.hasMatch(email);
 }
