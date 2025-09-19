@@ -156,7 +156,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         'assets/images/logo.jpg',
                         width: 150,
                         height: 120,
-                        fit: BoxFit.fill,
+                        fit: BoxFit.contain,
                       ),
                       
                     ],

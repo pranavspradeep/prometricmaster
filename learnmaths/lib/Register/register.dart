@@ -77,7 +77,7 @@ class SignUpPage extends StatelessWidget {
                                 'assets/images/logo.jpg',
                                 width: 150,
                                 height:80,
-                                fit: BoxFit.fill,
+                                fit: BoxFit.contain,
                               ),
                             ),
                             
