@@ -100,5 +100,5 @@ flutter:
 flutter_icons:
   android: true
   ios: true
-  image_path: "assets/images/logo.jpg"
+  image_path: "assets/images/lauicon.png"
   remove_alpha_ios: true
