@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:learnmaths/config.dart';
 import 'package:learnmaths/device_service.dart';
 
-class MobileAlreadyRegisteredException implements Exception {
+class EmailAlreadyRegisteredException implements Exception {
   final String message;
-  MobileAlreadyRegisteredException([this.message = 'Mobile number already registered.']);
+  EmailAlreadyRegisteredException([this.message = 'Email already registered.']);
   @override
   String toString() => message;
 }
@@ -75,13 +75,13 @@ class RegisterController extends ChangeNotifier {
       _isLoading = false;
       notifyListeners();
       if (response.statusCode == 409) {
-        throw MobileAlreadyRegisteredException();
+        throw EmailAlreadyRegisteredException();
       }
       return response.statusCode == 200;
     } catch (e) {
       _isLoading = false;
       notifyListeners();
-      if (e is MobileAlreadyRegisteredException) {
+      if (e is EmailAlreadyRegisteredException) {
         rethrow;
       }
       return false;

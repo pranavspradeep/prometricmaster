@@ -233,9 +233,9 @@ class SignUpPage extends StatelessWidget {
                                         const SnackBar(content: Text('Registration failed.')),
                                       );
                                     }
-                                  } on MobileAlreadyRegisteredException catch (_) {
+                                  } on EmailAlreadyRegisteredException catch (_) {
                                     ScaffoldMessenger.of(context).showSnackBar(
-                                      const SnackBar(content: Text('Mobile number already registered.')),
+                                      const SnackBar(content: Text('Email already registered.')),
                                     );
                                   } catch (e) {
                                     ScaffoldMessenger.of(context).showSnackBar(
